@@ -112,30 +112,30 @@ h2 {
 }
 
 .hero-title {
-  font-size: 72px;
+  font-size: 50px;
   font-weight: 600;
   letter-spacing: -0.04em;
 }
 
 .hero-description {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .section {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding: 1px;
 }
 
 .section-title {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
 
 .section-description {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 24px;
 }
@@ -271,4 +271,39 @@ textarea:focus {
   border-color: #01f3fd;
   border-image-source: var(--bg-primary-gradient);
   border-image-slice: 1;
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar-body {
+    order: 3;
+  }
+
+  .navbar-end {
+    order: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 72px;
+  }
+
+  .hero-description {
+    font-size: 24px;
+  }
+
+  .section-title {
+    font-size: 48px;
+  }
+
+  .section-description {
+    font-size: 24px;
+  }
+
+  .section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
 }
