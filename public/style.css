@@ -1,0 +1,157 @@
+:root {
+  --bg-primary-gradient: linear-gradient(
+    90deg,
+    #01f3fd -10.86%,
+    #ff6dc1 108.88%
+  );
+}
+
+.icon-play {
+  background-image: url(./icons/play.svg);
+}
+
+.button-primary {
+  background-color: transparent;
+  color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #01f3fd;
+  border-image-source: var(--bg-primary-gradient);
+  border-image-slice: 1;
+}
+
+.button-rounded {
+  padding: 12px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border-image-source: none;
+}
+
+.button-rounded .icon {
+  font-size: 1.2em;
+}
+
+.hero-main .hero-background {
+  background-position: 100% 0;
+}
+
+.section-1 .section-content {
+  max-width: 530px;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.section-1 .section-background:nth-child(1) {
+  top: -110%;
+  left: 0%;
+  bottom: 0%;
+  background-size: 60%;
+}
+.section-1 .section-background:nth-child(2) {
+  max-width: 1140px;
+  height: auto;
+  left: auto;
+  display: flex;
+}
+
+.section-2 .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 50px;
+}
+
+.section-2 .row > * {
+  flex: 1;
+}
+
+.section-2 .row > .column:nth-child(1) {
+  max-width: 400px;
+}
+
+.features-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.features-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.features-list-start {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.features-list-icon {
+  position: relative;
+}
+.features-list-icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 50px;
+  background-image: url(./icons/arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.features-list-body {
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.features-list-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.features-list-description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[class*="crystal-icon-"] {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-size: 48px;
+  font-weight: 200;
+  color: #01f3fd;
+}
+
+.crystal-icon-1 {
+  background-image: url(./cristal/1.png);
+  background-size: 82%;
+}
+
+.crystal-icon-2 {
+  background-image: url(./cristal/2.png);
+}
+
+.crystal-icon-3 {
+  background-image: url(./cristal/3.png);
+}
+
+.crystal-icon-4 {
+  background-image: url(./cristal/4.png);
+}
+
+.crystal-icon-5 {
+  background-image: url(./cristal/5.png);
+}
