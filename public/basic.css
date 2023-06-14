@@ -42,6 +42,7 @@ html {
   background-color: #000;
   box-sizing: border-box;
   line-height: 1.5;
+  font-size: 14px;
 }
 
 h1,
@@ -111,35 +112,36 @@ h2 {
 }
 
 .hero-title {
-  font-size: 72px;
+  font-size: 50px;
   font-weight: 600;
   letter-spacing: -0.04em;
 }
 
 .hero-description {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .section {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding: 1px;
 }
 
 .section-title {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
 
 .section-description {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
+  margin-bottom: 24px;
 }
 
 .section-actions {
-  margin-top: 50px;
+  margin-top: 36px;
 }
 
 .navbar {
@@ -223,7 +225,7 @@ h2 {
 }
 
 .text-primary {
-  background: linear-gradient(90deg, #01f3fd -10.86%, #ff6dc1 108.88%);
+  background: linear-gradient(90deg, #01f3fd -10.86%, #ff6dc1 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -232,4 +234,76 @@ h2 {
 
 .text-secondary {
   color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  min-width: 0;
+  padding: 12px 16px 12px 12px;
+  -webkit-appearance: none;
+  color: #fff;
+  font-size: 14px;
+  height: 48px;
+}
+
+input[type='text']::placeholder, input[type='email']::placeholder,
+input[type='tel']::placeholder,
+textarea::placeholder  {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input:focus,
+textarea:focus, 
+input:hover,
+textarea:hover {
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #01f3fd;
+  border-image-source: var(--bg-primary-gradient);
+  border-image-slice: 1;
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar-body {
+    order: 3;
+  }
+
+  .navbar-end {
+    order: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 72px;
+  }
+
+  .hero-description {
+    font-size: 24px;
+  }
+
+  .section-title {
+    font-size: 48px;
+  }
+
+  .section-description {
+    font-size: 24px;
+  }
+
+  .section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
 }
