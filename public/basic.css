@@ -18,6 +18,8 @@ iframe {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  fill: currentColor;
+  stroke: currentColor;
 }
 
 .hidden-visually:not(:focus):not(:active):not(:focus-within) {
@@ -237,12 +239,12 @@ h2 {
   font-size: 14px;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='tel'],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
 textarea {
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
   width: 100%;
   min-width: 0;
@@ -253,14 +255,15 @@ textarea {
   height: 48px;
 }
 
-input[type='text']::placeholder, input[type='email']::placeholder,
-input[type='tel']::placeholder,
-textarea::placeholder  {
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder {
   color: rgba(255, 255, 255, 0.8);
 }
 
 input:focus,
-textarea:focus, 
+textarea:focus,
 input:hover,
 textarea:hover {
   outline: none;
@@ -272,8 +275,6 @@ textarea:focus {
   border-image-source: var(--bg-primary-gradient);
   border-image-slice: 1;
 }
-
-
 
 @media (max-width: 768px) {
   .navbar-body {
@@ -306,4 +307,12 @@ textarea:focus {
     margin-top: 80px;
     margin-bottom: 80px;
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.center {
+  justify-content: center;
 }
