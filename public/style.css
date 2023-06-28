@@ -61,8 +61,7 @@
 .section-1 .section-background:nth-child(2) {
   max-width: 1140px;
   height: auto;
-  left: auto;
-  right: calc((100vw - 1300px - 200px) / 2);
+
   display: flex;
   opacity: 0.5;
 }
@@ -465,6 +464,8 @@
 @media (min-width: 1024px) {
   .section-1 .section-background:nth-child(2) {
     opacity: 1;
+    left: auto;
+    right: calc((100vw - 1300px - 200px) / 2);
   }
 
   .section-3 .section-background {
