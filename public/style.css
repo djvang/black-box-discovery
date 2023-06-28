@@ -62,7 +62,7 @@
   max-width: 1140px;
   height: auto;
   left: auto;
-  right: calc((100vw - 1300px) / 2);
+  right: calc((100vw - 1300px - 200px) / 2);
   display: flex;
   opacity: 0.5;
 }
