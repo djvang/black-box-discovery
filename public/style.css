@@ -413,8 +413,9 @@
   text-align: center;
 }
 
-.footer .container {
-  padding: 36px 0;
+.footer > .container {
+  padding-top: 36px;
+  padding-bottom: 36px;
   border-width: 2px;
   border-style: solid;
   border-color: #01f3fd;
@@ -471,6 +472,8 @@
   .section-3 .section-background {
     top: -80px;
     bottom: -80px;
+    right: 0;
+    left: calc((100vw - 1300px) / 2);
   }
 
   .company-list .company-item {

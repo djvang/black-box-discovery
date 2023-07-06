@@ -13,50 +13,127 @@
     <link rel="stylesheet" href="./public/normalize.css" />
     <link rel="stylesheet" href="./public/basic.css" />
     <link rel="stylesheet" href="./public/style.css" />
+
+    <script src="./public/scripts.js" defer></script>
+    
     <title>Black box discovery</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="main">
       <div class="hero hero-main">
         <div
           class="hero-background"
           style="background-image: url(./public/lights.png)"
         ></div>
+      
+        
         <div class="hero-foreground">
           <div class="hero-header">
             <div class="container">
-              <nav class="navbar">
-                <div class="navbar-start">
-                  <div class="logo">
-                    <img
-                      src="./public/logo/discovery.svg"
-                      alt="Black box discovery"
-                    />
+                <nav class="navbar navbar-desktop">
+                  <div class="navbar-start">
+                    <div class="logo">
+                      <img
+                        src="./public/logo/discovery.svg"
+                        alt="Black box discovery"
+                      />
+                    </div>
+                  </div>
+                  <div class="navbar-body">
+                    <ul class="navbar-nav">
+                      <li>
+                        <a href="#main">Головна</a>
+                      </li>
+                      <li>
+                        <a href="#program">Програма</a>
+                      </li>
+                      <li>
+                        <a href="#team">Команда</a>
+                      </li>
+                      <li>
+                        <a href="#partners">Партнери</a>
+                      </li>
+                      <li>
+                        <a href="#contact-us">Контакти</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="navbar-end">
+                    <a target="_blank" href="https://t.me/chat_openia_bot" class="button button-primary">Start App</a>
+                  </div>
+                </nav>
+
+                <nav class="navbar navbar-mobile">
+                  <div class="navbar-start">
+                    <div class="logo">
+                      <img
+                        src="./public/logo/discovery.svg"
+                        alt="Black box discovery"
+                      />
+                    </div>
+                  </div>
+                  <div class="navbar-end">
+                    <a target="_blank" href="https://t.me/chat_openia_bot" class="button button-primary">Start App</a>
+                    <a href="#" class="button button-primary navbar-button" data-offcanvas-id="#offcanvas-menu">
+                      <svg class="icon icon-menu" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path fill="currentColor" d="M4 24h24v-2.667h-24v2.667zM4 17.333h24v-2.667h-24v2.667zM4 8v2.667h24v-2.667h-24z"></path>
+                      </svg>
+                      <svg class="icon icon-close" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path fill="currentColor" d="M25.333 8.547l-1.88-1.88-7.453 7.453-7.453-7.453-1.88 1.88 7.453 7.453-7.453 7.453 1.88 1.88 7.453-7.453 7.453 7.453 1.88-1.88-7.453-7.453 7.453-7.453z"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </nav>
+
+                <div class="offcanvas">
+                  <div class="container">
+                    <div class="offcanvas-container">
+                      <div class="offcanvas-header">
+                        <div class="offcanvas-start">
+                          <div class="logo">
+                            <img
+                              src="./public/logo/discovery.svg"
+                              alt="Black box discovery"
+                            />
+                          </div>  
+                      </div>
+                      <div class="offcanvas-end">
+                        <a target="_blank" href="https://t.me/chat_openia_bot" class="button button-primary">Start App</a>
+                        <a href="#" class="button button-primary navbar-button" data-offcanvas-id="#offcanvas-menu">
+                          <svg class="icon icon-menu" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path fill="currentColor" d="M4 24h24v-2.667h-24v2.667zM4 17.333h24v-2.667h-24v2.667zM4 8v2.667h24v-2.667h-24z"></path>
+                          </svg>
+                          <svg class="icon icon-close" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path fill="currentColor" d="M25.333 8.547l-1.88-1.88-7.453 7.453-7.453-7.453-1.88 1.88 7.453 7.453-7.453 7.453 1.88 1.88 7.453-7.453 7.453 7.453 1.88-1.88-7.453-7.453 7.453-7.453z"></path>
+                          </svg>
+                        </a>
+                      </div>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="offcanvas-nav">
+                          <li>
+                            <a href="#main" data-offcanvas-id="#offcanvas-menu">Головна</a>
+                          </li>
+                          <li>
+                            <a href="#program" data-offcanvas-id="#offcanvas-menu">Програма</a>
+                          </li>
+                          <li>
+                            <a href="#team" data-offcanvas-id="#offcanvas-menu">Команда</a>
+                          </li>
+                          <li>
+                            <a href="#partners" data-offcanvas-id="#offcanvas-menu">Партнери</a>
+                          </li>
+                          <li>
+                            <a href="#contact-us" data-offcanvas-id="#offcanvas-menu">Контакти</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="offcanvas-footer">
+                        <div class="offcanvas-copyright">© 2023 Black Box Education. All rights reserved</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="navbar-body">
-                  <ul class="navbar-nav">
-                    <li>
-                      <a href="#">Головна</a>
-                    </li>
-                    <li>
-                      <a href="#">Програма</a>
-                    </li>
-                    <li>
-                      <a href="#">Команда</a>
-                    </li>
-                    <li>
-                      <a href="#">Партнери</a>
-                    </li>
-                    <li>
-                      <a href="#">Контакти</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <a href="#" class="button button-primary">Start App</a>
-                </div>
-              </nav>
             </div>
           </div>
           <div class="hero-body">
@@ -72,17 +149,12 @@
                   Discovery Driven Planning. Досліджуйте стратегічне і системне
                   мислення, бізнес-моделювання, управління змінами.
                 </div>
-                <div class="hero-actions">
-                  <button class="button button-primary button-rounded">
-                    <span class="hidden-visually">Play video</span>
-                    <span class="icon icon-play"></span>
-                  </button>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+ 
       <div class="section section-1">
         <div
           class="section-background"
@@ -96,20 +168,14 @@
             <div class="section-content">
               <h2 class="section-title text-primary">Олександр Саврук</h2>
               <div class="section-description">
-                Директор і декан Києво-Могилянської Бізнес-Школи. Кандидат
-                економічних наук, член Вченої ради і ректорату
-                Києво-Могилянської Академії, член та керівник наглядових рад
-                низки публічних та приватних організацій. Радник керівників
-                трансформаційних проєктів у сфері державного управління.
-                Авторські курси: «Інтро до системного мислення», «Стратегічне
-                мислення. Стратегічна ідея», «Управління створенням цінності.
-                Бізнес-моделювання», «Введення змін», «Дизайн бізнес-процесів».
+                Директор і декан Києво-Могилянської Бізнес-Школи. Кандидат економічних наук, член Вченої ради і ректорату Києво-Могилянської Академії, член та керівник наглядових рад низки публічних та приватних організацій. Радник керівників трансформаційних проєктів у сфері державного управління.
               </div>
+              <div class="text-secondary">Авторські курси: «Інтро до системного мислення», «Стратегічне мислення. Стратегічна ідея», «Управління створенням цінності. Бізнес-моделювання», «Введення змін», «Дизайн бізнес-процесів».</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section section-2">
+      <div class="section section-2" id="program">
         <div class="section-foreground">
           <div class="container">
             <div class="row">
@@ -222,7 +288,7 @@
           </div>
         </div>
       </div>
-      <div class="section section-4">
+      <div class="section section-4" id="partners">
         <div class="section-foreground">
           <div class="container">
             <div class="section-content">
@@ -308,7 +374,7 @@
         </div>
       </div>
 
-      <div class="section section-5">
+      <div class="section section-5" id="team">
         <div class="section-foreground">
           <div class="container">
             <div class="section-content">
@@ -479,19 +545,148 @@
                 <div class="form-col">
                   <button class="button button-primary">Надіслати</button>
                 </div>
-                
               </div>
-          
             </form>
           </div>
         </div>
       </div>
 
-      <div class="footer">
+      <div class="pre-footer pre-footer-desktop">
         <div class="container">
-          <div class="text-secondary">© 2023 Black Box Education. All rights reserved</div>
+          <div class="pre-footer-container">
+            <div class="pre-footer-body">
+              <ul class="footer-nav">
+                <li>
+                  <a href="#main">Головна</a>
+                </li>
+                <li>
+                  <a href="#program">Програма</a>
+                </li>
+                <li>
+                  <a href="#team">Команда</a>
+                </li>
+                <li>
+                  <a href="#partners">Партнери</a>
+                </li>
+                <li>
+                  <a href="#contact-us">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pre-footer-end">
+              <div class="social-list">
+                <a href="#" class="social-item">
+                  <img src="./public/icons/medium.svg" alt="">
+                </a>
+                <a href="#" class="social-item">
+                  <img src="./public/icons/cloud.svg" alt="">
+                </a>
+                <a href="#" class="social-item">
+                  <img src="./public/icons/slack.svg" alt="">
+                </a>
+                <a href="#" class="social-item">
+                  <img src="./public/icons/notion.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer footer-desktop">
+        <div class="container">
+          <div class="footer-copyright text-secondary">© 2023 Black Box Education. All rights reserved</div>
+        
+          <div class="company-list-2">
+            <div class="company-item-2">
+              <img src="./public/icons/kmbs.svg" class="company-kmbs"  alt="">
+            </div>
+            <div class="company-item-2">
+              <img src="./public/icons/alumni.svg" class="company-alumni" alt="">
+            </div>
+            <div class="company-item-2">
+              <img src="./public/icons/reactor.svg" class="company-reactor" alt="">
+            </div>
+            <div class="company-item-2">
+              <img src="./public/icons/tonai.svg" class="company-tonai" alt="">
+            </div>
+            <div class="company-item-2">
+              <img src="./public/icons/blackbox.svg" class="company-blackbox" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pre-footer pre-footer-mobile">
+        <div class="container">
+          <div class="pre-footer-container">
+            <div class="pre-footer-body">
+              <div class="social-list">
+                <a href="#" class="social-item">
+                  <img src="./public/icons/medium.svg" alt="">
+                </a>
+                <a href="#" class="social-item">
+                  <img src="./public/icons/cloud.svg" alt="">
+                </a>
+                <a href="#" class="social-item">
+                  <img src="./public/icons/slack.svg" alt="">
+                </a>
+                <a href="#" class="social-item">
+                  <img src="./public/icons/notion.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer footer-mobile">
+        <div class="container">
+          <div class="footer-columns">
+            <div>
+              <ul class="footer-nav">
+                <li>
+                  <a href="#main">Головна</a>
+                </li>
+                <li>
+                  <a href="#program">Програма</a>
+                </li>
+                <li>
+                  <a href="#team">Команда</a>
+                </li>
+                <li>
+                  <a href="#partners">Партнери</a>
+                </li>
+                <li>
+                  <a href="#contact-us">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-columns-divider"></div>
+            <div><div class="company-list-2">
+              <div class="company-item-2">
+                <img src="./public/icons/kmbs.svg" class="company-kmbs"  alt="">
+              </div>
+              <div class="company-item-2">
+                <img src="./public/icons/alumni.svg" class="company-alumni" alt="">
+              </div>
+              <div class="company-item-2">
+                <img src="./public/icons/reactor.svg" class="company-reactor" alt="">
+              </div>
+              <div class="company-item-2">
+                <img src="./public/icons/tonai.svg" class="company-tonai" alt="">
+              </div>
+              <div class="company-item-2">
+                <img src="./public/icons/blackbox.svg" class="company-blackbox" alt="">
+              </div>
+            </div></div>
+          </div>
+
+          <div class="footer-copyright text-secondary">© 2023 Black Box Education. All rights reserved</div>
         </div>
       </div>
     </div>
+  </div>
+   
   </body>
 </html>
